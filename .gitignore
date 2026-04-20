@@ -4,3 +4,8 @@ node_modules
 dist
 coverage
 *.log
+.next-dev.err
+.next-dev.log
+*.tsbuildinfo
+dotnet/**/bin
+dotnet/**/obj
