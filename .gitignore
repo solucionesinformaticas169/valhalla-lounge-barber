@@ -9,3 +9,5 @@ coverage
 *.tsbuildinfo
 dotnet/**/bin
 dotnet/**/obj
+
+.vercel
