@@ -350,11 +350,11 @@ export default function ServiciosPage() {
           <Image src="/images/noise.png" alt="Textura" fill className="object-cover" priority />
         </div>
 
-        <section className="mx-auto max-w-[1700px] px-3 pb-12 pt-10 sm:px-6 lg:pt-14">
-          <div className="mb-6 flex items-center justify-between gap-4">
+        <section className="mx-auto max-w-[1700px] px-3 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-10 lg:pt-14">
+          <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 rounded-full border border-[#8f602a]/50 bg-[linear-gradient(180deg,rgba(45,24,14,0.92),rgba(26,14,9,0.96))] px-5 py-3 text-[#e0b766] transition hover:border-[#c28b32]"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#8f602a]/50 bg-[linear-gradient(180deg,rgba(45,24,14,0.92),rgba(26,14,9,0.96))] px-5 py-3 text-center text-[#e0b766] transition hover:border-[#c28b32] sm:w-auto"
             >
               <ChevronLeft className="h-4 w-4" />
               Volver al home
@@ -364,15 +364,15 @@ export default function ServiciosPage() {
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="hidden items-center gap-3 rounded-full border border-[#8f602a]/45 bg-[linear-gradient(180deg,rgba(45,24,14,0.92),rgba(26,14,9,0.96))] px-5 py-3 text-[#e0b766] sm:inline-flex"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-[#8f602a]/45 bg-[linear-gradient(180deg,rgba(45,24,14,0.92),rgba(26,14,9,0.96))] px-5 py-3 text-center text-[#e0b766] sm:w-auto"
             >
               <MessageCircle className="h-4 w-4" />
               Solicitar por Whatsapp
             </a>
           </div>
 
-          <section className="rounded-[34px] border border-[#5b3c1a]/35 bg-[linear-gradient(180deg,rgba(21,11,7,0.98),rgba(11,6,4,0.98))] p-4 shadow-[0_25px_80px_rgba(0,0,0,0.5)] sm:p-6 lg:p-10">
-            <div className="relative overflow-hidden rounded-[28px] border border-[#7c5325]/30 bg-[linear-gradient(180deg,rgba(34,18,12,0.98),rgba(20,10,7,0.98))] p-6 sm:p-8 lg:p-10">
+          <section className="rounded-[28px] border border-[#5b3c1a]/35 bg-[linear-gradient(180deg,rgba(21,11,7,0.98),rgba(11,6,4,0.98))] p-3 shadow-[0_25px_80px_rgba(0,0,0,0.5)] sm:rounded-[34px] sm:p-6 lg:p-10">
+            <div className="relative overflow-hidden rounded-[24px] border border-[#7c5325]/30 bg-[linear-gradient(180deg,rgba(34,18,12,0.98),rgba(20,10,7,0.98))] p-4 sm:rounded-[28px] sm:p-8 lg:p-10">
               <div className="pointer-events-none absolute inset-0 opacity-[0.18]">
                 <Image src="/images/valhalla-bg.jpg" alt="Fondo" fill className="object-cover" />
               </div>
@@ -387,21 +387,21 @@ export default function ServiciosPage() {
                 />
               </div>
 
-              <form onSubmit={handleSubmit} className="relative z-10 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-                <div className="rounded-[28px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(63,33,17,0.72),rgba(36,18,11,0.9))] p-6 sm:p-8">
+              <form onSubmit={handleSubmit} className="relative z-10 grid gap-5 sm:gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+                <div className="rounded-[22px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(63,33,17,0.72),rgba(36,18,11,0.9))] p-4 sm:rounded-[28px] sm:p-8">
                   <div className="inline-flex rounded-full border border-[#8e632c]/55 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#d7a24e]">
                     Reserva cita
                   </div>
 
-                  <h1 className="mt-6 max-w-[12ch] font-serif text-[clamp(2.2rem,4.3vw,4.2rem)] leading-[0.96] text-[#efc167]">
+                  <h1 className="mt-5 max-w-[14ch] font-serif text-[clamp(1.9rem,7vw,4.2rem)] leading-[1] text-[#efc167] sm:mt-6 sm:max-w-[12ch] sm:leading-[0.96]">
                     Agenda tu atencion segun el servicio
                   </h1>
 
-                  <p className="mt-5 max-w-[54ch] text-base leading-8 text-white/82 sm:text-lg">
+                  <p className="mt-4 max-w-[54ch] text-sm leading-7 text-white/82 sm:mt-5 sm:text-lg sm:leading-8">
                     Selecciona uno o varios servicios.
                   </p>
 
-                  <div className="mt-8 rounded-[24px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(52,27,15,0.82),rgba(30,15,10,0.9))] p-5">
+                  <div className="mt-6 rounded-[20px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(52,27,15,0.82),rgba(30,15,10,0.9))] p-4 sm:mt-8 sm:rounded-[24px] sm:p-5">
                     <div className="flex items-center gap-3 text-[#efc167]">
                       <Clock3 className="h-4 w-4" />
                       <span className="text-sm font-semibold uppercase tracking-[0.2em]">
@@ -409,7 +409,7 @@ export default function ServiciosPage() {
                       </span>
                     </div>
 
-                    <div className="mt-5 grid gap-3 text-white/82">
+                    <div className="mt-4 grid gap-3 text-sm leading-6 text-white/82 sm:mt-5 sm:text-base">
                       <div className="flex items-start gap-3">
                         <Check className="mt-1 h-4 w-4 text-[#d7a24e]" />
                         <span>Martes a sabado: 9:00 AM a 9:00 PM</span>
@@ -434,9 +434,9 @@ export default function ServiciosPage() {
                         {serviceOptions.map((service) => (
                           <div
                             key={service}
-                            className="rounded-[18px] border border-[#8b5d28]/30 bg-[#24130d]/75 px-4 py-4"
+                            className="rounded-[18px] border border-[#8b5d28]/30 bg-[#24130d]/75 px-4 py-3.5 sm:py-4"
                           >
-                            <div className="font-medium text-white">{service}</div>
+                            <div className="text-sm font-medium text-white sm:text-base">{service}</div>
                             <div className="mt-1 text-sm text-[#c69046]">
                               {serviceDurations[service]} minutos
                             </div>
@@ -447,10 +447,10 @@ export default function ServiciosPage() {
                   </div>
                 </div>
 
-                <div className="rounded-[28px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(63,33,17,0.72),rgba(36,18,11,0.9))] p-6 sm:p-8">
-                  <h2 className="font-serif text-3xl text-[#efc167]">Servicios</h2>
+                <div className="rounded-[22px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(63,33,17,0.72),rgba(36,18,11,0.9))] p-4 sm:rounded-[28px] sm:p-8">
+                  <h2 className="font-serif text-[1.75rem] text-[#efc167] sm:text-3xl">Servicios</h2>
 
-                  <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-4 grid gap-3 sm:mt-5 sm:grid-cols-2">
                     {serviceOptions.map((service) => {
                       const active = selectedServices.includes(service);
 
@@ -460,20 +460,20 @@ export default function ServiciosPage() {
                           type="button"
                           onClick={() => toggleService(service)}
                           aria-pressed={active}
-                          className={`rounded-[18px] border px-4 py-4 text-left transition ${
+                          className={`rounded-[18px] border px-4 py-3.5 text-left transition sm:py-4 ${
                             active
                               ? "border-[#d7a24e] bg-[linear-gradient(180deg,rgba(110,59,26,0.96),rgba(58,30,17,0.98))] shadow-[0_0_24px_rgba(198,144,70,0.2)]"
                               : "border-[#8b5d28]/30 bg-[#24130d]/75 hover:border-[#a97332]/45 hover:bg-[linear-gradient(180deg,rgba(51,26,15,0.92),rgba(36,18,11,0.96))]"
                           }`}
                         >
                           <div className="flex items-center justify-between gap-3">
-                            <span className="flex items-center gap-2 font-medium text-white">
+                            <span className="flex min-w-0 items-center gap-2 text-sm font-medium text-white sm:text-base">
                               {active ? (
                                 <CheckCircle2 className="h-4 w-4 text-[#efc167]" />
                               ) : null}
-                              {service}
+                              <span className="break-words">{service}</span>
                             </span>
-                            <span className="text-sm text-[#d7a24e]">
+                            <span className="shrink-0 text-sm text-[#d7a24e]">
                               {serviceDurations[service]} min
                             </span>
                           </div>
@@ -549,7 +549,7 @@ export default function ServiciosPage() {
                         </button>
 
                         {calendarOpen ? (
-                          <div className="absolute left-0 top-[calc(100%+0.55rem)] z-30 w-[244px] rounded-[18px] border border-[#8b5d28]/45 bg-[linear-gradient(180deg,rgba(46,24,14,0.98),rgba(26,14,9,0.98))] p-2.5 shadow-[0_20px_42px_rgba(0,0,0,0.44)] backdrop-blur-xl">
+                          <div className="absolute left-0 top-[calc(100%+0.55rem)] z-30 w-full max-w-[280px] rounded-[18px] border border-[#8b5d28]/45 bg-[linear-gradient(180deg,rgba(46,24,14,0.98),rgba(26,14,9,0.98))] p-2.5 shadow-[0_20px_42px_rgba(0,0,0,0.44)] backdrop-blur-xl sm:w-[244px] sm:max-w-none">
                             <div className="mb-3 flex items-center justify-between">
                               <button
                                 type="button"
@@ -664,13 +664,13 @@ export default function ServiciosPage() {
                     <p className="mt-3 text-sm text-[#f0a7a7]">{errors.horaInicio}</p>
                   ) : null}
 
-                  <div className="mt-6 rounded-[22px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(52,27,15,0.82),rgba(30,15,10,0.9))] p-5">
+                  <div className="mt-6 rounded-[20px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(52,27,15,0.82),rgba(30,15,10,0.9))] p-4 sm:rounded-[22px] sm:p-5">
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                       <div>
                         <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c69046]">
                           Resumen
                         </div>
-                        <div className="mt-2 font-serif text-2xl text-[#efc167]">
+                        <div className="mt-2 break-words font-serif text-xl leading-tight text-[#efc167] sm:text-2xl">
                           {summaryText}
                         </div>
                       </div>
@@ -679,14 +679,14 @@ export default function ServiciosPage() {
                         <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c69046]">
                           Duracion total
                         </div>
-                        <div className="mt-2 font-serif text-2xl text-[#efc167]">
+                        <div className="mt-2 font-serif text-xl text-[#efc167] sm:text-2xl">
                           {totalDuration > 0 ? `${totalDuration} min` : "-"}
                         </div>
                       </div>
                     </div>
 
-                    <p className="mt-4 text-sm leading-7 text-white/74">{helperText}</p>
-                    <p className="mt-2 text-sm leading-7 text-white/58">
+                    <p className="mt-4 text-sm leading-6 text-white/74 sm:leading-7">{helperText}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/58 sm:leading-7">
                       {loadingSlots
                         ? "Cargando horarios ocupados..."
                         : busyAppointments.length > 0
@@ -696,7 +696,7 @@ export default function ServiciosPage() {
                           : "Todavia no hay reservas registradas para esa fecha."}
                     </p>
                     {endTimeLabel ? (
-                      <p className="mt-2 text-sm leading-7 text-[#d7c18c]">
+                      <p className="mt-2 text-sm leading-6 text-[#d7c18c] sm:leading-7">
                         La cita terminaria a las {endTimeLabel}.
                       </p>
                     ) : null}
