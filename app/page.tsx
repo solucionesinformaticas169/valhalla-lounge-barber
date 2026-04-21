@@ -235,10 +235,10 @@ export default function Page() {
                   className="h-auto w-[220px] max-w-full -translate-y-24 transform sm:w-[460px] sm:-translate-y-48 lg:w-[620px] lg:-translate-y-56"
                   priority
                 />
-                <p className="mt-20 max-w-[880px] text-[clamp(1.08rem,1.7vw,1.55rem)] leading-[1.6] text-[#e2b45e] sm:-mt-36 lg:-mt-40">
+                <p className="mt-20 max-w-[880px] text-[clamp(1.08rem,1.7vw,1.55rem)] leading-[1.6] text-[#e2b45e] sm:mt-10 lg:-mt-40">
                   Transforma tu look con cortes y afeitados de calidad en un ambiente acogedor.
                 </p>
-                <div className="mt-16 flex w-full flex-col items-center gap-4 sm:mt-7 sm:flex-row sm:justify-center">
+                <div className="mt-16 flex w-full flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:justify-center lg:mt-7">
                   <a
                     href="/servicios"
                     className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-[#c28b32] bg-[linear-gradient(180deg,rgba(60,35,20,0.96),rgba(31,19,12,0.98))] px-10 py-4 text-lg font-semibold text-[#f0d59a] shadow-[0_0_30px_rgba(194,139,50,0.18)] transition hover:shadow-[0_0_36px_rgba(194,139,50,0.28)] sm:w-auto"
@@ -267,7 +267,7 @@ export default function Page() {
 
               <div
                 id="contacto-footer"
-                className="relative inset-x-[4%] z-20 mx-[4%] mt-4 rounded-[28px] border border-[#8b5d28]/45 bg-[linear-gradient(180deg,rgba(55,28,14,0.88),rgba(33,17,10,0.92))] backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.45)] scroll-mt-24 sm:absolute sm:bottom-5 sm:mx-0 sm:mt-0"
+                className="relative inset-x-[4%] z-20 mx-[4%] mt-4 rounded-[28px] border border-[#8b5d28]/45 bg-[linear-gradient(180deg,rgba(55,28,14,0.88),rgba(33,17,10,0.92))] backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.45)] scroll-mt-24 lg:absolute lg:bottom-5 lg:mx-0 lg:mt-0"
               >
                 <div className="grid grid-cols-1 md:grid-cols-3">
                   <div className="flex flex-col gap-4 px-6 py-6 text-white/92 sm:px-8">
