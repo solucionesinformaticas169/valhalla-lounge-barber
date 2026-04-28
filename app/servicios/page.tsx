@@ -387,66 +387,7 @@ export default function ServiciosPage() {
                 />
               </div>
 
-              <form onSubmit={handleSubmit} className="relative z-10 grid gap-5 sm:gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-                <div className="rounded-[22px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(63,33,17,0.72),rgba(36,18,11,0.9))] p-4 sm:rounded-[28px] sm:p-8">
-                  <div className="inline-flex rounded-full border border-[#8e632c]/55 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#d7a24e]">
-                    Reserva cita
-                  </div>
-
-                  <h1 className="mt-5 max-w-[14ch] font-serif text-[clamp(1.9rem,7vw,4.2rem)] leading-[1] text-[#efc167] sm:mt-6 sm:max-w-[12ch] sm:leading-[0.96]">
-                    Agenda tu atencion segun el servicio
-                  </h1>
-
-                  <p className="mt-4 max-w-[54ch] text-sm leading-7 text-white/82 sm:mt-5 sm:text-lg sm:leading-8">
-                    Selecciona uno o varios servicios.
-                  </p>
-
-                  <div className="mt-6 rounded-[20px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(52,27,15,0.82),rgba(30,15,10,0.9))] p-4 sm:mt-8 sm:rounded-[24px] sm:p-5">
-                    <div className="flex items-center gap-3 text-[#efc167]">
-                      <Clock3 className="h-4 w-4" />
-                      <span className="text-sm font-semibold uppercase tracking-[0.2em]">
-                        Horarios de atencion
-                      </span>
-                    </div>
-
-                    <div className="mt-4 grid gap-3 text-sm leading-6 text-white/82 sm:mt-5 sm:text-base">
-                      <div className="flex items-start gap-3">
-                        <Check className="mt-1 h-4 w-4 text-[#d7a24e]" />
-                        <span>Martes a sabado: 9:00 AM a 9:00 PM</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <Check className="mt-1 h-4 w-4 text-[#d7a24e]" />
-                        <span>Domingo: 10:00 AM a 3:00 PM</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <Check className="mt-1 h-4 w-4 text-[#d7a24e]" />
-                        <span>Lunes: no disponible</span>
-                      </div>
-                    </div>
-
-                    <div className="mt-6 h-px bg-[#8b5d28]/30" />
-
-                    <div className="mt-6">
-                      <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#efc167]">
-                        Duracion de servicios
-                      </h2>
-                      <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                        {serviceOptions.map((service) => (
-                          <div
-                            key={service}
-                            className="rounded-[18px] border border-[#8b5d28]/30 bg-[#24130d]/75 px-4 py-3.5 sm:py-4"
-                          >
-                            <div className="text-sm font-medium text-white sm:text-base">{service}</div>
-                            <div className="mt-1 text-sm text-[#c69046]">
-                              {serviceDurations[service]} minutos
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+              <form onSubmit={handleSubmit} className="relative z-10 mx-auto w-full max-w-[960px]">
                 <div className="rounded-[22px] border border-[#8b5d28]/35 bg-[linear-gradient(180deg,rgba(63,33,17,0.72),rgba(36,18,11,0.9))] p-4 sm:rounded-[28px] sm:p-8">
                   <h2 className="font-serif text-[1.75rem] text-[#efc167] sm:text-3xl">Servicios</h2>
 
